@@ -11,5 +11,21 @@ module.exports = {
     compress: true,
     port: 8077,
     inline: true//实时刷新
-  }
+  },
+  module: {
+          rules: [
+              {
+                  test: /(\.jsx|\.js)$/,
+                  use: {
+                      loader: "babel-loader",
+                      options: {
+                          presets: [
+                              "es2015", "react"
+                          ]
+                      }
+                  },
+                  exclude: /node_modules/
+              }
+          ]
+    }
 }
