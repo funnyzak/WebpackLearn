@@ -1,0 +1,23 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "simple app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
+    "server": "webpack-dev-server --open",
+    "watch": "webpack-dev-server --config webpack.config.js --hot --inline --progress"
+  },
+  "keywords": [
+    "hello",
+    "me"
+  ],
+  "author": "skyf",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "~2.7.1"
+  }
+}
